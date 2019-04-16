@@ -1,0 +1,5 @@
+<h1>Flexible Payments</h1>
+
+<!--this is how number_to/with_X works in terms of syntax, study this-->
+
+<p>A <%= @years %> year loan of $<%= number_with_delimiter(@principal, :delimiter => ",") %>, with an annual interest rate of <%= number_to_percentage(@apr_dec_present, :precision => 2)%>, requires a monthly payment of <%= number_to_currency(@monthly_payment, :precision => 2) %>.</p>
